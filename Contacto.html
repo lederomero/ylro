@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="iso-8859-1" />
+        <meta name="description" content="Ejemplo de HTML5" />
+        <meta name="keywords" content="HTML, CSS3, Javascript" />
+        <title>COVER-MOON</title>
+        <link rel="stylesheet" href="misestilos.css">
+    </head>
+    <body>
+    <div id="agrupar">
+        <header id="cabecera">
+            <h1>COVER-MOON</h1>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><a href="COVER-MOON.html">Principal</a></li>
+                <li>Publicaciones</li>
+                <li>Talleres</li>
+                <li>Fotos</li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li>Articulo</li>
+                <li>Ayudas</li>
+                <li class="estoy aqui"><a href="Contacto.html">Contacto</a></li>
+               
+            </ul>
+        </nav>
+        <section id="columna1">
+            <p>Direccion</p>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98001.21193918506!2d-4.069470223482099!3d39.862188238413886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6a0bad0bb5fdf1%3A0xc67f5be86a75adfe!2sToledo!5e0!3m2!1ses!2ses!4v1518601024861" width="98.5%" height="450" frameborder="5" style="border:5px solid grey" allowfullscreen></iframe>
+        </fieldset> 
+        </section>
+        <aside>
+        
+            <datalist id="Provincia">
+                <option value="Toledo" label="Toledo">
+                <option value="Madrid" label="Madrid">
+                <option value="Albacete" label="Albacete">
+                <option value="Valencia" label="Valencia">    
+           </datalist>
+                
+                <form name="miformulario" id="miformulario" method="get" enctype="multipart/form-data">
+             <fieldset>
+                <legend>Mi Informacion</legend>
+               <input type="date" name="fecha" id="fecha" placeholder="Fecha">
+                <input style="width: 100px" pattern="[0-9]{5}" name="codigopostal" id="codigopostal" placeholder="C.Postal" title="inserte los 5 números de su código postal">
+                <input pattern="[0-9]{8} [a-zA-Z] {1}" name="DNI" id="DNI" placeholder="DNI" >
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required>
+              <br>
+               <input type="radio" name="sexo" value="Mujer">M
+               <input type="radio" name="sexo" value="Hombre">H
+               <br>
+               <input type="email" name="miemail" id="miemail" placeholder="Correo" required multiple>
+               <br>
+                <input style="width: 50px" type="number" name="numero" id="numero" min=”0” max="100" placeholder="Edad"
+                step=”5”>
+                 <select name="Provincia" required>
+                   <option value="">Elige Provincia</option>
+                <option value="To">Toledo</option>
+                <option value="AB">Albacete</option> 
+                <option value="CR">Ciudad Real</option>    
+                </select>
+                <select name="localidades" >
+                    <option value="">Localidades</option>
+                    <option value="Olias">Olias del Rey</option>
+                    <option value="Toledo">Toledo</option>
+                    <option value="Talavera">Talavera de la Reina</option>
+                    <option value="Bargas">Bargas</option>
+                    <option value="Nambroca">Nambroca</option>
+                </select>
+                <input type="text" name="Provicia" id="Provincia" placeholder="Provincia" list="Provincia" required>
+             <br>
+              <input type="checkbox" name="aficiones" value="Futbol">Futbol
+              <input type="checkbox" name="aficiones" value="Cine">Cine
+              <input type="checkbox" name="aficiones" value="Musica">Musica
+              <br>
+               <input type="file" name="Foto" style="width: 100%;">
+               <input type="checkbox" name="acepto" checked requied>He leido y acepto las condiciones
+               
+                <input type="submit" value="Enviar">
+                
+               </form>
+            </fieldset>
+        </aside>
+        <footer id="pie">
+            <small>Derechos Reservados &copy; Y.R.-E.M.</small>
+        </footer>
+    </div>
+    </body>
+    </html>
+ 
